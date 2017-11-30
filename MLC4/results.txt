@@ -1,0 +1,11 @@
+
+from sklearn.svm import SVC
+stacker = SVC(kernel = 'rbf', C = 1)
+results = cross_val_score(stacker, X, y, cv=2)
+print("Stacker score: {} for num: ".format(results.mean()))
+from sklearn.svm import SVC
+stacker = SVC(kernel = 'rbf', C = 1)
+results = cross_val_score(stacker, X, y, cv=2)
+print("Stacker score: {} for num: ".format(results.mean()))
+Stacker score: 0.7759100313615455 for num
+
